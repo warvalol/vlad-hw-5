@@ -1,4 +1,52 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* clearfix for float */
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  width: 1600px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* start HEADER */
+
+header {
+  display: block;
+}
+
+.page-header {
+  margin-bottom: 38px;
+  padding-top: 43px;
+}
+
+.logo {
+  float: left;
+  margin: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555252;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.logo::before {
+  content: "M";
+  color: #4ec6ab;
+  font-weight: 500;
+}
+
+.main-nav {
+  float: right;
+  text-decoration: none;
+  text-transform: uppercase;
 }
