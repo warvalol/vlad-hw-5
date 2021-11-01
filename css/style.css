@@ -149,6 +149,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* z-index: 1; - поднять над другими блоками (я так сделал доступными к клику ссылки) */
+  z-index: 1;
   width: 738px;
   height: 104px;
   /*border: solid 1px red;*/
@@ -178,19 +180,40 @@ figcaption a {
 }
 
 figure a:focus {
-  color: orangered;
+  color: orange;
 }
 /* finish SLIDER */
 
 /* start NEW COLLECTION */
 
 .new-collection {
+  width: 100%;
   background-color: #e9f0fd;
   padding-top: 100px;
-  padding-left: 245px;
-  width: 1600px;
 }
 
 .new-collection-title {
   margin-bottom: 80px;
+}
+
+.new-collection-title h2 {
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 32px;
+  padding-top: 100px;
+}
+
+.new-collection-title h2::after {
+  content: "";
+  display: table;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 30px;
 }
