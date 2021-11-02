@@ -35,11 +35,14 @@ body {
 
 header {
   display: block;
+  width: 100%;
+  margin: auto;
 }
 
 .page-header {
   margin-bottom: 38px;
   padding-top: 43px;
+  width: 1110px;
 }
 
 .logo {
@@ -51,8 +54,6 @@ header {
   font-size: 30px;
   line-height: 32px;
   font-weight: 300;
-  /* макетный отступ */
-  padding-left: 245px;
 }
 
 .logo::before {
@@ -63,14 +64,14 @@ header {
 
 .main-nav {
   float: right;
+  line-height: 32px;
   text-decoration: none;
   text-transform: uppercase;
-  /* макетный отступ */
-  margin-right: 245px;
 }
 
 .main-menu {
   padding: 0;
+  margin: 0;
 }
 
 .main-menu-item {
