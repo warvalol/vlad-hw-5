@@ -234,14 +234,10 @@ figure a:focus {
 
 /* product cards */
 
-.product-cards {
-  width: 1110px;
-  margin: 0 auto;
-}
-
 .product-list {
+  width: 1110px;
   list-style: none;
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
 }
 
