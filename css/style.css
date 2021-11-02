@@ -203,6 +203,7 @@ figure a:focus {
   width: 100%;
   background-color: #e9f0fd;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .new-collection-title {
@@ -317,7 +318,7 @@ figure a:focus {
   border-style: solid;
   border-color: white;
   background-color: black;
-  opacity: 0.4;
+  opacity: 0.55;
   /* display: none; - рамка вокруг фото товара скрыта */
   display: none;
 }
@@ -357,6 +358,8 @@ figure a:focus {
   cursor: pointer;
   display: inline-block;
   padding: 0px;
+  margin: 0px;
+  text-align: center;
 }
 /* добавляю иконку перед текстом "add to cart" */
 .add::before {
@@ -365,7 +368,7 @@ figure a:focus {
   background-image: url(../img/basket.png);
   width: 28px;
   height: 27px;
-  margin-right: 20px;
+  margin-right: 18px;
   vertical-align: middle;
 }
 
@@ -375,14 +378,19 @@ figure a:focus {
   border: 1px solid #1abc9c;
 }
 
+/* вернуть цекст ADD TO CART */
+.cart {
+  display: inline-block;
+}
+
 .like {
   background-image: url(../img/heart.png);
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .repost {
   background-image: url(../img/arrows.png);
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .time {
@@ -428,7 +436,7 @@ footer {
   height: 88px;
   background-color: #323232;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
 }
 
 .footer-p {
